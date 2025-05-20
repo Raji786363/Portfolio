@@ -83,10 +83,6 @@ function populateContent(data) {
                 <div class="project-tech">
                     ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
-                <div class="project-links">
-                    <a href="${project.liveLink}" target="_blank" class="btn">Live Demo</a>
-                    <a href="${project.githubLink}" target="_blank" class="btn">GitHub</a>
-                </div>
             </div>
         `;
         projectsGrid.appendChild(projectCard);
