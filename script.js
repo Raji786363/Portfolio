@@ -15,14 +15,43 @@ function populateContent(data) {
     document.querySelector('.profile-image').src = data.personalInfo.profileImage;
     document.querySelector('.name').textContent = data.personalInfo.name;
     document.querySelector('.title').textContent = data.personalInfo.title;
-    document.querySelector('.bio').textContent = data.personalInfo.bio;
+    
+    // Create a shorter bio for hero section
+    const shortBio = "Manual Tester with 3.3 years of experience in software testing, specializing in identifying and resolving software defects. Skilled in API testing, mobile testing, and defect management. Proficient in creating detailed test cases and ensuring comprehensive test coverage.";
+    document.querySelector('.bio').textContent = shortBio;
+
+    // About Section
+    const aboutText = document.querySelector('.about-text');
+    aboutText.innerHTML = `
+        <p>${data.personalInfo.bio}</p>
+    `;
+
+    const contactInfo = document.querySelector('.contact-info');
+    contactInfo.innerHTML = `
+        <div class="contact-details">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:${data.personalInfo.email}">${data.personalInfo.email}</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:${data.personalInfo.phone}">${data.personalInfo.phone}</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>${data.personalInfo.location}</span>
+            </div>
+        </div>
+    `;
 
     // Social Links
     const socialLinks = document.querySelector('.social-links');
+    socialLinks.innerHTML = ''; // Clear existing content
     Object.entries(data.personalInfo.socialLinks).forEach(([platform, url]) => {
         const link = document.createElement('a');
         link.href = url;
         link.target = '_blank';
+        link.rel = 'noopener noreferrer';
         link.innerHTML = `<i class="fab fa-${platform}"></i>`;
         socialLinks.appendChild(link);
     });
@@ -91,8 +120,25 @@ function populateContent(data) {
         educationTimeline.appendChild(timelineItem);
     });
 
-    // Update copyright year
+    // Certifications
+    if (data.certifications && data.certifications.length > 0) {
+        const certificationsGrid = document.querySelector('.certifications-grid');
+        certificationsGrid.innerHTML = ''; // Clear existing content
+        data.certifications.forEach(cert => {
+            const certCard = document.createElement('div');
+            certCard.className = 'certification-card fade-in';
+            certCard.innerHTML = `
+                <h3>${cert.name}</h3>
+                <p class="issuer">${cert.issuer}</p>
+                <p class="date">${cert.date}</p>
+            `;
+            certificationsGrid.appendChild(certCard);
+        });
+    }
+
+    // Update copyright year and name
     document.getElementById('current-year').textContent = new Date().getFullYear();
+    document.querySelector('.footer p').textContent = `© ${new Date().getFullYear()} ${data.personalInfo.name}. All rights reserved.`;
 }
 
 // Mobile Navigation Toggle
@@ -133,11 +179,27 @@ contactForm.addEventListener('submit', async (e) => {
         message: document.getElementById('message').value
     };
 
-    // Here you would typically send the form data to a server
-    // For now, we'll just log it and show a success message
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    contactForm.reset();
+    try {
+        // Here you would typically send the form data to a server
+        // For now, we'll just log it and show a success message
+        console.log('Form submitted:', formData);
+        
+        // Show success message
+        const successMessage = document.createElement('div');
+        successMessage.className = 'success-message';
+        successMessage.textContent = 'Thank you for your message! I will get back to you soon.';
+        contactForm.parentNode.insertBefore(successMessage, contactForm.nextSibling);
+        
+        // Remove success message after 5 seconds
+        setTimeout(() => {
+            successMessage.remove();
+        }, 5000);
+        
+        contactForm.reset();
+    } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('There was an error sending your message. Please try again later.');
+    }
 });
 
 // Intersection Observer for fade-in animations
