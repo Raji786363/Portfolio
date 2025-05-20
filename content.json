@@ -1,68 +1,212 @@
 {
   "personalInfo": {
-    "name": "Your Name",
-    "title": "Web Developer",
-    "bio": "A passionate web developer with expertise in creating beautiful and functional websites.",
-    "email": "your.email@example.com",
-    "phone": "+1 234 567 890",
-    "location": "Your Location",
+    "name": "Raji Sattanathan",
+    "title": "Software Quality Assurance Engineer",
+    "bio": "Manual Tester with 3.3 years of experience in software testing, specializing in identifying and resolving software defects to ensure high-quality product delivery. Expertise in Manual Testing across various domains, with a solid understanding of the Software Testing Life Cycle (STLC), defect life cycle, and test methodologies. Skilled in API testing using tools like Postman, mobile testing through BrowserStack, and defect management using tools like JIRA. Proficient in creating detailed test cases, test scenarios, and test reports while ensuring comprehensive test coverage. Hands-on experience working in Agile-Scrum environments, actively participating in sprint planning, daily stand-ups, reviews, and retrospectives. Adept at functional testing, regression testing, and collaborating with cross-functional teams to ensure seamless software delivery. Strong analytical and problem-solving skills with a focus on maintaining data accuracy, consistency, and meeting deadlines",
+    "email": "rajiahamed2417@gmail.com",
+    "phone": "+91 9629574151",
+    "location": "Tirunelveli, India",
     "profileImage": "profile.jpg",
     "socialLinks": {
-      "github": "https://github.com/yourusername",
-      "linkedin": "https://linkedin.com/in/yourusername",
-      "twitter": "https://twitter.com/yourusername"
-    }
+      "github": "https://raji786363.github.io/Portfolio/",
+      "linkedin": "https://www.linkedin.com/in/raji-s-048014273"
+    },
+    "languages": ["Tamil", "English"]
   },
   "skills": [
     {
-      "name": "HTML5",
+      "name": "Salesforce Basics",
       "level": 90
     },
     {
-      "name": "CSS3",
+      "name": "Test Case Review",
+      "level": 95
+    },
+    {
+      "name": "Manual Test Execution",
+      "level": 95
+    },
+    {
+      "name": "Software Testing Life Cycle",
+      "level": 90
+    },
+    {
+      "name": "Test Case Creation",
+      "level": 95
+    },
+    {
+      "name": "Test Plan Preparation",
+      "level": 90
+    },
+    {
+      "name": "Bug Life Cycle",
+      "level": 95
+    },
+    {
+      "name": "Postman API",
       "level": 85
     },
     {
-      "name": "JavaScript",
+      "name": "Bug Reporting",
+      "level": 95
+    },
+    {
+      "name": "Test Scenarios",
+      "level": 90
+    },
+    {
+      "name": "Test Cases",
+      "level": 95
+    },
+    {
+      "name": "Manual Testing",
+      "level": 95
+    },
+    {
+      "name": "Mobile Application Testing",
+      "level": 90
+    },
+    {
+      "name": "API Testing",
+      "level": 85
+    },
+    {
+      "name": "Pycharm",
       "level": 80
     },
     {
-      "name": "Responsive Design",
+      "name": "Selenium",
+      "level": 75
+    },
+    {
+      "name": "Python",
+      "level": 70
+    },
+    {
+      "name": "Browser Testing",
       "level": 85
+    },
+    {
+      "name": "Browserstack",
+      "level": 85
+    },
+    {
+      "name": "SQL",
+      "level": 80
+    },
+    {
+      "name": "UI/UX Testing",
+      "level": 90
     }
   ],
   "projects": [
     {
-      "title": "Project 1",
-      "description": "A brief description of your first project",
+      "title": "Delta SFDC Account Lifecycle",
+      "description": "The SkyMiles Business Customers and Delta Pro Customers Project aims to streamline customer account management by identifying and flagging duplicate accounts in the system. The project ensures that duplicate accounts are detected and flagged under the 'Potential Duplicate' object, preventing redundancy and maintaining data integrity",
       "image": "images/project1.jpg",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "liveLink": "https://project1.com",
-      "githubLink": "https://github.com/yourusername/project1"
+      "technologies": ["Salesforce", "Data Management", "Account Lifecycle", "Duplicate Detection"],
+      "liveLink": "#",
+      "githubLink": "#"
     },
     {
-      "title": "Project 2",
-      "description": "A brief description of your second project",
+      "title": "Professional Locator",
+      "description": "The Find a Professional Locator Landing Page project involves developing a user-friendly web interface to help users locate qualified professionals based on their specific needs and location. The landing page integrates search filters, maps, and contact details to provide an efficient and personalized user experience. This project aims to enhance accessibility and streamline the process of connecting users with professionals across various domains",
       "image": "images/project2.jpg",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "liveLink": "https://project2.com",
-      "githubLink": "https://github.com/yourusername/project2"
+      "technologies": ["Web Interface", "Search Filters", "Maps Integration", "User Experience"],
+      "liveLink": "#",
+      "githubLink": "#"
+    },
+    {
+      "title": "PIM DAM API Migration",
+      "description": "LGEUS - The website is for Heater, ventilator and Air conditioner. My roles and responsibilities in this project is to validate After the data is migrated between the two systems, it should function in the same way as the existing process.",
+      "image": "images/project3.jpg",
+      "technologies": ["API Migration", "Data Validation", "System Integration", "HVAC Systems"],
+      "liveLink": "#",
+      "githubLink": "#"
+    },
+    {
+      "title": "DXP Data Migration",
+      "description": "The DXP Data Migration project focuses on transitioning data from legacy systems to a modern Digital Experience Platform (DXP) to improve digital capabilities and user engagement. The process involves extracting, transforming, and loading data while ensuring its accuracy, consistency, and security throughout the migration. By leveraging DXP's advanced features, the project aims to deliver personalized experiences and streamline business workflows",
+      "image": "images/project4.jpg",
+      "technologies": ["Data Migration", "ETL", "Digital Experience Platform", "Data Security", "Workflow Automation"],
+      "liveLink": "#",
+      "githubLink": "#"
+    },
+    {
+      "title": "MYVISITMAKER",
+      "description": "MYVISITMAKER is a salon website (Product based application) provides service for Partners, stylists and customer for Booking appointment in salon",
+      "image": "images/project5.jpg",
+      "technologies": ["Web Application", "Booking System", "Salon Management"],
+      "liveLink": "#",
+      "githubLink": "#"
+    },
+    {
+      "title": "Edio",
+      "description": "Edio(Education for Individualized Outcomes) is CCA's relationship management system (RMS). It was designed by CCA teachers, parents, staff, and students to provide a personalized learning experience unique to CCA.",
+      "image": "images/project6.jpg",
+      "technologies": ["Web Application", "Relationship Management", "Education System"],
+      "liveLink": "#",
+      "githubLink": "#"
+    },
+    {
+      "title": "Women Safety App",
+      "description": "The main purpose of this app is to provide a safe platform through Android phone as today all person is taking Smart Phones to travel here and there. The user also gets to know the current user address using GPS location tracker. The fetched information is sent to the emergency contact of the user.",
+      "image": "images/project7.jpg",
+      "technologies": ["Android", "GPS", "Location Services", "Emergency Contact System"],
+      "liveLink": "#",
+      "githubLink": "#"
     }
   ],
   "experience": [
     {
-      "title": "Web Developer",
-      "company": "Company Name",
-      "period": "2020 - Present",
-      "description": "Description of your responsibilities and achievements"
+      "title": "Software Quality Assurance Engineer",
+      "company": "Bezohminds Private Limited",
+      "period": "Jul 2023 - Present",
+      "description": "Dedicated and detail-oriented Manual Tester with 3.1 years of experience in quality assurance and software testing. Proven track record of ensuring the functionality, reliability, and performance of software applications. Adept at creating and executing test cases, identifying defects, and collaborating with cross-functional teams to deliver high-quality software."
+    },
+    {
+      "title": "Quality Analyst - Manual Tester",
+      "company": "LearningMate Solutions",
+      "period": "Jul 2022 - Mar 2023",
+      "description": "As a quality analyst, my aim is to ensure that products meet or exceed the required standards of quality. I will achieve this by planning and conducting tests, monitoring product quality, and collaborating with other members of the development team."
+    },
+    {
+      "title": "QA Analyst - Manual Tester",
+      "company": "SA Technologies",
+      "period": "Oct 2021 - Jul 2022",
+      "description": "Involved in test analysis, test case creation, test execution, raised defects, traceability matrix, regression testing and all participated in all Agile methodologies."
     }
   ],
   "education": [
     {
-      "degree": "Bachelor's in Computer Science",
-      "institution": "University Name",
-      "period": "2016 - 2020",
-      "description": "Relevant coursework and achievements"
+      "degree": "Bachelor of Education",
+      "institution": "Psn College Of Education, Tirunelveli",
+      "period": "2021",
+      "description": ""
+    },
+    {
+      "degree": "MS/M.Sc(Science)",
+      "institution": "Sadakathulla Appa College, Palayamkottai",
+      "period": "2018",
+      "description": ""
+    },
+    {
+      "degree": "B.Sc",
+      "institution": "Rose Mary College Of Arts & Science, Tirunelveli",
+      "period": "2016",
+      "description": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Salesforce AI Associate",
+      "issuer": "Salesforce",
+      "date": "2023"
+    },
+    {
+      "name": "Salesforce AI Specialist",
+      "issuer": "Salesforce",
+      "date": "2023"
     }
   ]
 } 
